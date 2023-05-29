@@ -1,0 +1,113 @@
+.main-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-cta {
+    padding: 11px 40px;
+    background-color: #D11F8A;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.main-cta:hover {
+    background-color: #b30f71;
+}
+
+.section-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 51px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.box-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.swiper-slide {
+    width: 100% !important;
+    height: 490px !important;
+}
+
+[data-animation=bottom] {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+    transition: all .8s ease;
+}
+
+.swiper-slide-active [data-animation='bottom'] {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.swiper-pagination {
+    left: 42px!important;
+    bottom: 40px !important;
+    text-align: left!important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #D11F8A !important;
+}
+
+@media screen and (max-width: 479px) {
+    .main-cta {
+        padding: 11px 15px;
+        font-size: 14px;
+        line-height: 18px;
+        gap: 30px;
+    }
+
+    .main-container {
+        padding: 0 8px;
+    }
+
+    .swiper-slide {
+        height: 220px !important;
+    }
+
+    .swiper-pagination {
+        left: 10px !important;
+        bottom: 4px !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 4px !important;
+        height: 4px !important;
+    }
+
+    .nav-container {
+        padding: 0 15px;
+    }
+}
